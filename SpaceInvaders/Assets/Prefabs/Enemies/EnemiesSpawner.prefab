@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4213834407317230573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4213834407317230571}
+  - component: {fileID: 4213834407317230570}
+  - component: {fileID: 4213834407317230568}
+  m_Layer: 0
+  m_Name: EnemiesSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4213834407317230571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4213834407317230573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4213834407317230570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4213834407317230573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd27148612e125b499864f6f9db77748, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _normalEnemyPrefab: {fileID: 3297968008557955826, guid: 74100905f74454648bbce2f3a05b2640, type: 3}
+  _shootingEnemyPrefab: {fileID: 755563176217424530, guid: 03439475cc6ba684fa81fd252effa78b, type: 3}
+  _projectilePrefab: {fileID: 3098025389867583096, guid: 20168a80bc6c368448accc43754f6cb4, type: 3}
+  _levelTexture: {fileID: 2800000, guid: 931d09d9481f04c4d81726619a686cf9, type: 3}
+--- !u!114 &4213834407317230568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4213834407317230573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca6ec9d245e48d4da01c55556efd584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initialSpeed: 2
+  _speedStep: 1
